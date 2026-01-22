@@ -82,15 +82,8 @@ if __name__ == "__main__":
             analysis_dispatch_inputs = AnalysisDispatchModel.model_validate(
                 json.load(f)
             )
-        merged_parameters = get_analysis_model_parameters(
-            analysis_dispatch_inputs,
-            cli_model,
-            ExampleAnalysisSpecification,
-            analysis_parameters_json_path=cli_model.input_directory
-            / "analysis_parameters.json",
-        )
         analysis_specification = ExampleAnalysisSpecification.model_validate(
-            merged_parameters
+            analysis_dispatch_inputs.analysis_code.parameters
         ).model_dump()
         logger.info(f"Running with analysis specs {analysis_specification}")
         run_analysis(
