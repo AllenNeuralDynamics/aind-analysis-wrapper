@@ -12,11 +12,11 @@
 			"packages": [
 				{
 					"name": "boto3",
-					"version": "1.43.30"
+					"version": "1.42.30"
 				},
 				{
 					"name": "git+https://github.com/AllenNeuralDynamics/analysis-pipeline-utils#egg=analysis-pipeline-utils",
-					"version": "feat-skip-in-dispatch"
+					"version": "87411c72c963462ad185514597fb7b4efaa572c1"
 				},
 				{
 					"name": "pydantic-settings",
