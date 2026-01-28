@@ -12,7 +12,9 @@ from analysis_pipeline_utils.utils_analysis_wrapper import (
 
 from example_analysis_model import (ExampleAnalysisOutputs,
                                     ExampleAnalysisSpecification)
+from dotenv import load_dotenv
 
+load_dotenv()
 ANALYSIS_BUCKET = os.getenv("ANALYSIS_BUCKET")
 logger = logging.getLogger(__name__)
 
