@@ -12,7 +12,7 @@
 			"packages": [
 				{
 					"name": "git+https://github.com/AllenNeuralDynamics/analysis-pipeline-utils#egg=analysis-pipeline-utils",
-					"version": "fffaeb1bc0596c8413ccecfce5f746ba3223c24a"
+					"version": "272948f5e72c8cae74cedf65db4c933403ab5685"
 				},
 				{
 					"name": "pydantic-settings",
@@ -46,7 +46,7 @@
 		},
 		{
 			"name": "CODEOCEAN_EMAIL",
-			"value": "tom.chartrand@alleninstitute.org"
+			"value": "YOUR_EMAIL_HERE@alleninstitute.org"
 		},
 		{
 			"name": "ANALYSIS_BUCKET",
